@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio for MSc Applied Geoinformatics at Salzburg University</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+        <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Leaflet -->
+     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+    <style type="text/css">
+    .list {
+        text-align: center;
+        display:inline-block;  
+        font-size: 20px;
+        text-align: left;
+    }
+
+    #mapsa { height: 450px; }
+
+
+    .leaflet-control {
+        text-align: left;
+    }
+
+    .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } 
+    .info h4 { margin: 0 0 5px; color: #777; }
+    .legend { text-align: left; line-height: 18px; color: #555; } 
+    .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+
+   
+    </style>
+
+
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Portfolio</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Skillset</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile1.png" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Applied Geoinformatics</h1>
+                        <span class="skills">Remote sensing - Spatial analysis - Machine learning - Databases</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+        <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <br>
+                     <div class="row">
+                        <div class="col-lg-4 col-lg-offset-2">
+                            <p>
+                                Geoinformatics is the science and the technology which develops and uses information science infrastructure. Geoinformation science plays a role in all domains and disciplines making use of geospatial information, such as: 
+
+                                <ul class="list">
+                                    <li>Resource Management</li>
+                                    <li>Risk and Disaster Management</li>
+                                    <li>Navigation systems</li>
+                                    <li>Logistics</li>
+                                    <li>Crime analysis</li>
+                                </ul>
+                            </p>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Geoinformatics uses geocomputation and geovisualization for analyzing geoinformation in order to solve problems. It's disciplines range from Remote Sensing over Photogrammetry to Spatial Analysis. Making use of: 
+                                    <ul class="list">
+                                    <li>Computer vision</li>
+                                    <li>Machine learning</li>
+                                    <li>Big Data techniques</li>
+                                    <li>Social Network Data Analytics</li>
+                                    <li>Data mining</li>
+                                </ul></p>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Skillset</h2>
+                </div>
+            </div>
+            <br>
+
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p>In order to solve problems arising from dealing with spatial data, as a geoinformatic scientist a multitude of knowledge is needed. Ranging from the usage of backend software for storing and distributing geospatial data, to front end web mapping libraries </p>
+                </div>
+
+                <div class="row">
+                     <div class="col-lg-4 col-lg-offset-2">
+                         <p>Software:</p>
+                         <ul class="list">
+                             <li>GDAL</li>
+                             <li>QGIS</li>
+                             <li>ERDAS Imagine</li>
+                             <li>ESRI Desktop / Server</li>
+                             <li>Geoserver</li>
+                         </ul>
+                     </div>
+
+                     <div class="col-lg-4  col-lg-offset-2">
+                     <p>Programming:</p>
+                        <ul class="list">
+                             <li>Python</li>
+                             <li>LaTeX</li>
+                             <li>HTML/CSS</li>
+                             <li>SQL</li>
+                             <!-- <li>R</li> -->
+                             <li>Javascript</li>
+                         </ul>    
+
+                     </div>
+                </div>    
+                
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sa.png" class="img-responsive" alt="SA">
+                        <!-- <img src="img/portfolio/cake.png" class="img-responsive" alt="Slice of cake"> -->
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sdi.png" class="img-responsive" alt="SDI">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ml.png" class="img-responsive" alt="ML">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/rs.png" class="img-responsive" alt="RS">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/bd.png" class="img-responsive" alt="BD">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/db.png" class="img-responsive" alt="DB">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <!-- <h3>About Freelancer</h3> -->
+                        <!-- <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>ESDA of crime data</h2>
+                            <div></div>
+                            <p style="font-size:20px;">Various techniques are used to study crimes. But as every crime involes spatial data, Exploratory Spatial Data Analysis (ESDA) is the first step in spatial crime analysis.</p>
+                            <div id="mapsa"></div>
+                            <br>
+                            <p style="font-size:15px;">This map shows Hot and Coldspots for various crimes, happend between 2010 and 2017 in the city of Chicago. Clusters are based on population adjusted Local Indicators of Spatial Association (<a href="http://dx.doi.org/10.1111/j.1538-4632.1995.tb00338.x">LISAs</a>)</p>
+                            <ul class="list-inline item-details">
+                                <li>Data:
+                                    <strong><a href="https://data.cityofchicago.org/">City of Chicago</a>
+                                    </strong>
+                                </li>
+                                <li>Libraries:
+                                    <li>
+                                    <strong><a href="http://pysal.readthedocs.io/en/latest/">PySAL</a>
+                                    </strong>
+                                    </li>
+                                    </strong></li>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Spatial Data Infrastructure (SDI)</h2>
+                            <p style="font-size:20px;">For effective sharing and use of spatial data and spatial information, it is necessary to create an infrastructure consisting of common technologies. Setting up a SDI enables acquiring, processing, storing and distributing geospatial data according to <a style="font-size:20px;" href="http://www.opengeospatial.org/">industry standards</a>. </p>
+                             <img style="height:40vh;" src="img/portfolio/sdi1.png" class="img-responsive img-centered" alt="sdi">
+                             <p style="font-size:15px;">Commercial as well as free and open-source software exists for managing the specific needs of spatial data. An open-source solution could look like the setup shown above.</p>
+                           <ul class="list-inline item-details">
+                                <li>Software:
+                                    <li><strong><a href="http://geoserver.org/">GeoServer</a></strong></li>
+                                    <li><strong><a href="http://postgis.net/">PostGIS</a></strong></li>
+                                    <li><strong><a href="https://www.postgresql.org/">PostgreSQL</a></strong></li>
+                                    <li><strong><a href="https://www.nginx.com/">NGINX</a></strong></li>
+                                </li>
+
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Machine Learing</h2>
+                            <p>Classification of Hyperspectral data using a Random Forest algorithm</p>
+                            <img src="img/portfolio/ml.gif" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                                <li>Libraries:
+                                    <strong><a href="http://scikit-learn.org/stable/">scikit-learn</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a href="http://pandas.pydata.org/">pandas</a>
+                                    </strong>
+                                </li>
+<!--                                 <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li> -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Working with remotely sensed data</h2>
+                            <p style="font-size:20px;">The rapid advancements in UAV capabilities in recent years made high resolution image acquisition possible.
+                            For places such as mining sites, UAV's can be used for monitoring, and calculation of changes.</p>
+                            <img src="img/portfolio/3d.gif" class="img-responsive img-centered" alt="3D model">
+                            <p style="font-size:15px;">3D model has been generated from a pointcloud, retrieved by using photogrammetry techniques.</p>
+                            <ul class="list-inline item-details">
+                                <li>Software:
+                                    <li><strong><a href="https://pix4d.com/">Pix4D</a>
+                                    </strong></li>
+                                    <li><strong><a href="http://potree.org/">Potree</a>
+                                    </strong></li>
+   
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Big Data</h2>
+                             <p style="font-size:20px;">With the rapid development of computational as well as IT infrastructure, the data to analyze also grew. In order to deal with vasts amount of data, a solution is out of core processing.</p>
+                            <img src="img/portfolio/dask.gif" class="img-responsive img-centered" alt="">
+                             <p style="font-size:15px;">The NY Taxi data from 2015 has a size of 22.9 GB. Even though, some would not considere that Big Data, however using Dask, this data can be analyzed on a Desktop with only 16gb ram using simple Python. When switching to Software explicity developed for Big Data such as Hadoop, workflows have to be changed.</p>
+                            <ul class="list-inline item-details">
+                                <li>Library:
+                                    <strong><a href="http://dask.pydata.org">Dask</a>
+                                    </strong>
+                                </li>
+                                <li>Data:
+                                    <strong><a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml">NY Taxi (2015)</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Databases</h2>
+                            <p style="font-size:20px;">Spatial databases (PostGIS for PostgreSQL) creates support for geographic objects, allowing location queries to be run in a  relational database.</p>
+                            <img src="img/portfolio/postgis.gif" class="img-responsive img-centered" alt="">
+                            <p style="font-size:20px;">This scenario shows how trough the use of simple Python a Shapefile can be retrieved from the internet, edited and added to a PostGIS database</p>
+                            <ul class="list-inline item-details">
+                                <li>Libraries:
+                                    <strong><a href="http://geopandas.org/">Geopandas</a>   
+                                    </strong>
+                                    <strong><a href="https://www.sqlalchemy.org/">SQLAlchemy</a>
+                                    </strong>
+                                    <strong><a href="https://pypi.python.org/pypi/Fiona">Fiona</a></strong>
+                                </li>
+                                <li>Database:
+                                    <strong><a href="https://www.postgresql.org/">PostgreSQL</a></strong>
+                                    <strong><a href="postgis.net/">PostGIS</a></strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="https://www.docker.com/">Docker</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+    
+
+
+     <!-- mystuff -->
+
+    <script src="data/data.geojson" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+    <script src="js/map2.js"></script>
+
+    <script type="text/javascript">
+//             $('#portfolioModal1').on('show.bs.modal', function (e) {
+//     setTimeout(function(){
+//         console.info('show.bs.modal');
+//         map.invalidateSize();
+//     }, 150);                        
+// })
+    </script>
+
+</body>
+
+</html>
